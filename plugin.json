@@ -1,0 +1,13 @@
+{
+  "id": "nodebb-plugin-liveleak",
+  "name": "NodeBB LiveLeak Plugin",
+  "description": "NodeBB Plugin allowing users to embed LiveLeak videos inline in their posts.",
+  "url": "https://github.com/m03/nodebb-plugin-liveleak",
+  "library": "./library.js",
+  "hooks": [
+    { "hook": "filter:post.parse", "method": "parse", "callbacked": true, "priority": 6 }
+  ],
+  "css": [
+    "static/style.css"
+  ]
+}
